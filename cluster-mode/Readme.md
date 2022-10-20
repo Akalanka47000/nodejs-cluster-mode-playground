@@ -1,0 +1,1 @@
+# Sample application to try out the cluster mode in node.js
