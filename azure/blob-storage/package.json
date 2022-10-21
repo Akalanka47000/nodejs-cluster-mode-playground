@@ -1,0 +1,20 @@
+{
+  "name": "blob-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akalanka47000/nodejs-playground.git"
+  },
+  "author": "Akalanka Perera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akalanka47000/nodejs-playground/issues"
+  },
+  "homepage": "https://github.com/Akalanka47000/nodejs-playground#readme",
+  "dependencies": {
+    "@azure/storage-blob": "^12.12.0",
+    "dotenv": "^16.0.3"
+  }
+}
