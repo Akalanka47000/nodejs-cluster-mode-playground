@@ -1,12 +1,8 @@
 {
-  "name": "cluster-mode",
+  "name": "blob-storage",
   "version": "1.0.0",
-  "description": "Sample application to try out the cluster mode in node.js",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Akalanka47000/nodejs-playground.git"
@@ -18,9 +14,7 @@
   },
   "homepage": "https://github.com/Akalanka47000/nodejs-playground#readme",
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@azure/storage-blob": "12.12.0",
+    "dotenv": "16.0.3"
   }
 }

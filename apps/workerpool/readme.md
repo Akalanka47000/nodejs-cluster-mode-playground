@@ -1,0 +1,1 @@
+# Sample application to try out the workerpool library
