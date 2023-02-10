@@ -12,17 +12,20 @@ app.get('/', (req, res) => {
 app.get('/big-process', async (req, res) => {
     pool
         .exec(() => {
-            for (let i = 0; i < 50000; i++) {
+            let completed = 0;
+            for (let i = 0; i < 5000000; i++) {
                 console.log(i)
+                completed++;
             }
-        }, [])
-        .then(function () {
-            res.json({ message: 'Big process done!' })
+            return completed;
         })
-        .catch(function (err) {
+        .then((completed) => {
+            res.json({ message: 'Big process done!', data: { completed } })
+        })
+        .catch((err) => {
             console.error(err);
         })
-        .then(function () {
+        .then(() => {
             pool.terminate();
         });
 })
